@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hse_apps/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/services.dart';
-import 'pages/land.dart';
+import 'pages/app.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle( 
@@ -16,9 +16,14 @@ void main() {
   );
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
 
